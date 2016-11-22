@@ -46,6 +46,14 @@ public class OtherDemoService {
     
     return user;
   }
+  ///other_demo_service/no_param?long0=99&string1=abc
+  @API
+  public User noParam(Long id, String username) {
+    User user = new User();
+    user.setId(id);
+    user.setUsername(username);
+    return user;
+  }
   
   public static class TextResolver implements ResponseResolver {
 
