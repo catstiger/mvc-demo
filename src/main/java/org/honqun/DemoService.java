@@ -1,11 +1,22 @@
 package org.honqun;
 
-import com.github.catstiger.mvc.annotation.Api;
+import java.util.Date;
+import java.util.Random;
 
-@Api
+import com.github.catstiger.mvc.annotation.API;
+import com.github.catstiger.mvc.annotation.Domain;
+import com.github.catstiger.mvc.annotation.Param;
+
+@Domain
 public class DemoService {
-  @Api
-  public User create(String name, String password) {
-    return new User();
+  @API
+  public User create(@Param("name") String name, @Param("password") String password) {
+    User user = new User();
+    
+    user.setBirth(new Date());
+    user.setUsername(name);
+    user.setId(new Random().nextLong());
+    user.setScore(new Random().nextDouble() * 100);
+    return user;
   }
 }

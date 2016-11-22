@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <constant name="struts.locale" value="zh_CN"></constant>
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	<constant name="struts.custom.i18n.resources" value="application"></constant>
+	<constant name="struts.objectFactory " value="constructor"></constant>
+	<constant name="struts.devMode " value="false"></constant>
+	<constant name="struts.ui.theme" value="simple"></constant>
+	<constant name="struts.action.extension" value="htm"></constant>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false"></constant>
+	<constant name="struts.enable.SlashesInActionNames" value="true"></constant>
+	<constant name="struts.mapper.alwaysSelectFullNamespace" value="false"></constant>
+	<constant name="struts.mapper.class" value="org.apache.struts2.dispatcher.mapper.DefaultActionMapper"></constant>
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true"></constant>
+	<constant name="struts.multipart.maxSize" value="16106127360"/><!-- 15G -->
+	<constant name="struts.convention.result.path" value="/WEB-INF/views" /> 
+	<constant name="struts.convention.package.locators" value="struts2,webapp,action,actions" />
+<!-- 	<constant name="struts.convention.package.locators.basePackage" value="org.honqun,lsoso" /> -->
+	<constant name="struts.convention.action.name.separator" value="-" />
+	<constant name="struts.convention.exclude.parentClassLoader" value="false" /><!-- 解决Jetty无法加载Action的问题 -->
+</struts>
