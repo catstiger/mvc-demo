@@ -18,4 +18,12 @@ public class SpringDemoController {
     user.setId(id);
     return user;
   }
+  
+
+  @RequestMapping("/view_user")
+  public User createUser(@ModelAttribute("id")Long id) {
+    User user = new User();
+    user.setId(id);
+    return user;
+  }
 }

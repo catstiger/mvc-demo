@@ -3,9 +3,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>505</title>
+<title>500</title>
 </head>
 <body>
-  505
+  500
+<%
+Exception e = (Exception) request.getAttribute("javax.servlet.error.exception");
+out.println(e.getMessage());
+%>
 </body>
 </html>
