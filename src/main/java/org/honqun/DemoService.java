@@ -37,4 +37,15 @@ public class DemoService {
     user.setScore(new Random().nextDouble() * 100);
     return user;
   }
+  
+  @API(resolver = IBeetlResolver.class)
+  public User ibeetlTest (@Param("name") String name, @Param("id") Long id) {
+    User user = new User();
+    
+    user.setBirth(new Date());
+    user.setUsername(name);
+    user.setId(id);
+    user.setScore(new Random().nextDouble() * 100);
+    return user;
+  }
 }
