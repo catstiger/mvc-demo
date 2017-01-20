@@ -27,7 +27,7 @@
 		<dependency>
 		  <groupId>com.github.catstiger</groupId>
 		  <artifactId>catstiger-mvc</artifactId>
-		  <version>0.1.2</version>
+		  <version>0.1.20</version>
 		</dependency>
 		
 		<dependency>

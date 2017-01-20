@@ -18,21 +18,11 @@
           <param-name>basePackage</param-name>
           <param-value>org.honqun</param-value>
       </init-param>
-      <init-param>
-          <param-name>uriPrefix</param-name>
-          <param-value>/mvc</param-value>
-      </init-param>
-      
-      <init-param>
-          <param-name>cacheSeconds</param-name>
-          <param-value>0</param-value>
-      </init-param>
-      
   </filter>
   
   <filter-mapping>
       <filter-name>MvcFilter</filter-name>
-      <url-pattern>/mvc/*</url-pattern>
+      <url-pattern>/*</url-pattern>
   </filter-mapping>
   
  <!--  <filter>

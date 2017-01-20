@@ -6,6 +6,7 @@ import java.util.Random;
 import com.github.catstiger.mvc.annotation.API;
 import com.github.catstiger.mvc.annotation.Domain;
 import com.github.catstiger.mvc.annotation.Param;
+import com.github.catstiger.mvc.exception.Exceptions;
 
 @Domain
 public class DemoService {
@@ -47,5 +48,16 @@ public class DemoService {
     user.setId(id);
     user.setScore(new Random().nextDouble() * 100);
     return user;
+  }
+  
+  @API
+  public User exTest(@Param("num") long num) {
+    if(num < 0L) {
+      throw Exceptions.readable("可读异常！");
+    } else if (num < 100L){
+      return new User();
+    } else {
+      throw new RuntimeException("不可读异常");
+    }
   }
 }

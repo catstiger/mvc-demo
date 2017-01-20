@@ -14,7 +14,7 @@ import com.github.catstiger.mvc.annotation.Param;
 import com.github.catstiger.mvc.config.ApiResource;
 import com.github.catstiger.mvc.converter.ValueConverter;
 import com.github.catstiger.mvc.resolver.ResponseResolver;
-import com.github.catstiger.mvc.util.WebUtils;
+import com.github.catstiger.utils.WebUtils;
 
 @Domain
 public class OtherDemoService {

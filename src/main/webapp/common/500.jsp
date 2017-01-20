@@ -6,7 +6,7 @@
 <title>500</title>
 </head>
 <body>
-  500
+  505
 <%
 Exception e = (Exception) request.getAttribute("javax.servlet.error.exception");
 out.println(e.getMessage());
