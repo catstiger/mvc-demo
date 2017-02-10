@@ -14,22 +14,22 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-			
+
 			<plugin>
-			  <groupId>org.eclipse.jetty</groupId>
-			  <artifactId>jetty-maven-plugin</artifactId>
-			  <version>9.4.0-SNAPSHOT</version>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>9.4.0.v20161208</version>
 			</plugin>
-			
+
 		</plugins>
 	</build>
 	<dependencies>
 		<dependency>
-		  <groupId>com.github.catstiger</groupId>
-		  <artifactId>catstiger-mvc</artifactId>
-		  <version>0.1.20</version>
+			<groupId>com.github.catstiger</groupId>
+			<artifactId>catstiger-mvc</artifactId>
+			<version>0.1.21</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
@@ -45,18 +45,18 @@
 			<artifactId>jackson-databind</artifactId>
 			<version>2.8.5</version>
 		</dependency>
-		
+
 		<dependency>
-  		<groupId>org.springframework</groupId>
-  		<artifactId>spring-webmvc</artifactId>
-  		<version>4.2.7.RELEASE</version>
-  	</dependency>
-  	
-  	<dependency>
-	    <groupId>com.ibeetl</groupId>
-	    <artifactId>beetl</artifactId>
-	    <version>2.7.0</version>
-	</dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>4.2.7.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.ibeetl</groupId>
+			<artifactId>beetl</artifactId>
+			<version>2.7.0</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.apache.struts</groupId>
@@ -74,9 +74,20 @@
 			<artifactId>struts2-convention-plugin</artifactId>
 			<version>2.3.15.3</version>
 		</dependency>
-		
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.1.2</version>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
-	
+
 	<organization>
 		<name>Honqun.org</name>
 	</organization>
@@ -84,15 +95,15 @@
 		<developerConnection>catstiger</developerConnection>
 		<url>https://github.com/catstiger/mvc-demo</url>
 	</scm>
-	
+
 	<repositories>
-	    <repository>
-        <id>Honqun Nexus 3dp</id>
-        <name>Honqun Repository</name>
-        <url>http://115.28.55.60:8081/nexus/content/repositories/thirdparty/</url>
-        <snapshots>
-            <enabled>true</enabled>
-        </snapshots>
-    </repository>
+		<repository>
+			<id>Honqun Nexus 3dp</id>
+			<name>Honqun Repository</name>
+			<url>http://115.28.55.60:8081/nexus/content/repositories/thirdparty/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
 	</repositories>
 </project>

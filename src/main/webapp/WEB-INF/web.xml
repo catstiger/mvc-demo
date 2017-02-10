@@ -18,6 +18,10 @@
           <param-name>basePackage</param-name>
           <param-value>org.honqun</param-value>
       </init-param>
+      <init-param>
+          <param-name>defaultSuccessTemplateResolver</param-name>
+          <param-value>org.honqun.resolver.MySuccessResolver</param-value>
+      </init-param>
   </filter>
   
   <filter-mapping>
